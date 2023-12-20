@@ -2,20 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    background-color: rgb(50, 62, 70);
     font-family: 'Antonio', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
 }
+body{
+    background-color: rgb(50, 62, 70);
+    
+}
 .logo{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: rgb(255, 255, 255);
     user-select: none;
 }
 .navbar a{
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 500;
@@ -38,7 +39,7 @@ body{
 }
 header{
     display: flex;
-    padding:60px;
+    padding:30px;
     z-index: 99;
     position: fixed;
     left:-1px;
@@ -91,25 +92,46 @@ header{
     color: transparent;
     -webkit-text-stroke: 1px white;
 }
-.ser{
+.serv{
      color: white;
-    font-size: 60px;
+    font-size: 3rem;
     position: absolute;
     font-weight: 600;
     left: 100px;
     top:850px;
 }
+.serv:hover{
+    cursor: pointer;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
 .fettish a{
     position: relative;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-weight: 700;
-    margin-left: 40px;
+    font-weight: 400;
+    margin-left: 30px;
     top:870px;
-    left:700px;
+    left:500px;
     justify-content: space-between;
-}.bar{
+}
+.fettish a::after{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.fettish a:hover::after{
+    transform: scaleX(0.8);
+}
+.bar{
     width:90%;
     height:500px;
     background-color: rgb(80, 91, 98);
@@ -169,7 +191,7 @@ header{
     font-size: 30px;
     font-weight: 300;
     position: absolute;
-    top:1580px;
+    top:1570px;
     left: 340px;
 }
 .items h1{
@@ -177,54 +199,54 @@ header{
     font-size: 50px;
     font-weight: 500;
     position: absolute;
-    top:1620px;
+    top:1600px;
     left: 200px;
 }
 .box-image{
     display: flex;
     position: absolute;
-    top: 1700px;
+    top: 1650px;
     left: 120px;
 }
 .boxim{
     padding: 20px;
 }
-.bb{
+.feat{
     position: absolute;
-    top:2420px;
-    left:290px;
+    top:2150px;
+    left:200px;
     color: white;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 400;
 }
-.xy{
-    position: absolute;
-    top:2420px;
-    left:1070px;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
+.eat{
+position: absolute;
+top:2150px;
+left:800px;
+color: white;
+font-size: 2rem;
+font-weight: 400;
 }
 .aa{
     position: absolute;
-    top:2460px;
-    left:290px;
+    top:2200px;
+    left:220px;
     color: white;
     font-size: 20px;
     font-weight: 600;
 }
-.adx{
+.usd2{
     position: absolute;
-    top:2460px;
-    left:1070px;
+    top:2200px;
+    left:820px;
     color: white;
     font-size: 20px;
     font-weight: 600;
 }
 .zedon{
     position: absolute;
-    top:2440px;
-    left:700px;
+    top:2250px;
+    left:200px;
     width: 130px;
     height: 40px;
     background-color: rgb(165, 176, 184); 
@@ -232,6 +254,26 @@ header{
     font-size: 15px;
     font-weight: 600;
     border: none;
+    border-radius: 10px;
+}
+.zedo{
+    position: absolute;
+    top:2250px;
+    left:800px;
+    width: 130px;
+    height: 40px;
+    background-color: rgb(165, 176, 184); 
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
+.zedo:hover{
+    cursor: pointer;
+    background-color:transparent;
+    color: rgb(165, 176, 184); 
+    border: solid 2px rgb(165, 176, 184); 
 }
 .zedon:hover{
     cursor: pointer;
@@ -240,9 +282,16 @@ header{
     border: solid 2px rgb(165, 176, 184); 
 }
 .baller{
-    left:1480px;
+    position: absolute;
+    top:2300px;
+    left:500px;
     width: 130px;
     height: 40px;
+    background-color: rgb(165, 176, 184); 
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
 }
 
 .bary{
@@ -848,3 +897,26 @@ h3 {
     word-spacing: 200px;
 }
 
+@media (max-width:320px) {
+    .background-image{
+        width: 100%;
+        margin: auto;
+        height: 500px;
+    }
+    .lemon h1{
+        top: 220px;
+        left: 0px;
+    }
+    .lemon p{
+        top: 420px;
+        left: 0;
+    }
+    .jj{
+        top: 600px;
+        left: 20px;
+    }
+    .serv{
+        top: 730px;
+        left: 20px;
+    }
+}
