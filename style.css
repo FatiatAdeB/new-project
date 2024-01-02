@@ -373,21 +373,21 @@ background: white;
   opacity: 60%;
   border: solid 2px white;
 }
-.slide {
+.hike {
   color: white;
   font-size: 40px;
   position: absolute;
-  top: 400px;
+  top: 300px;
   left: 20px;
   text-align: center;
   width: 600px;
   font-weight: 700;
 }
-.slide2 {
+.shops {
   color: white;
   font-size: 20px;
   position: absolute;
-  top: 600px;
+  top: 500px;
   left: 120px;
   text-align: center;
   width: 400px;
@@ -413,8 +413,8 @@ background: white;
   color: white;
   font-size: 40px;
   position: absolute;
-  top: 400px;
-  left: 1000px;
+  top: 300px;
+  left: 700px;
   text-align: center;
   width: 600px;
   font-weight: 700;
@@ -423,8 +423,8 @@ background: white;
   color: white;
   font-size: 20px;
   position: absolute;
-  top: 600px;
-  left: 1100px;
+  top: 500px;
+  left: 800px;
   text-align: center;
   width: 400px;
   font-weight: 500;
@@ -436,7 +436,7 @@ background: white;
   color: rgb(50, 62, 70);
   position: absolute;
   top: 900px;
-  left: 1230px;
+  left: 950px;
   border: none;
 }
 .lore:hover {
@@ -451,30 +451,21 @@ background: white;
   background-color: rgb(106, 116, 121);
   position: absolute;
   top: 1200px;
-  /* left: 90px; */
-  /* border: solid 2px white; */
 }
 .vb {
   position: absolute;
-  top: 1300px;
+  top: 1400px;
   left: 100px;
-  font-size: 30px;
-  font-weight: 400;
-  color: white;
-}
-.lop {
-  position: absolute;
-  top: 1370px;
-  left: 100px;
-  font-size: 60px;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 600;
   color: white;
 }
 .boy {
   position: absolute;
-  top: 1470px;
+  top: 1480px;
   left: 100px;
   width: 300px;
+  height: 3px;
 }
 .mn {
   position: absolute;
@@ -499,20 +490,20 @@ background: white;
   left: 850px;
   border: solid 2px white;
 }
+.bad {
+  position: absolute;
+  top: 1960px;
+  left: 300px;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: white;
+}
 .can {
   width: 100%;
   height: 200px;
   background-color: rgb(106, 116, 121);
   position: absolute;
   top: 2010px;
-}
-.bad {
-  position: absolute;
-  top: 2090px;
-  left: 500px;
-  font-size: 60px;
-  font-weight: 700;
-  color: white;
 }
 .pop {
   position: absolute;
@@ -550,47 +541,57 @@ background: white;
   left: 1260px;
   border: solid 2px white;
 }
-.email-form {
-  text-align: center;
-  background-color: transparent;
-  border: solid 2px white;
-  padding: 20px;
-  /* border-radius: 8px; */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 3610px;
-  left: 1200px;
-}
-
-.email-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
-
-.submit-button {
-  background-color: rgb(106, 116, 121);
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  border: 2px solid white;
-}
-
-.submit-button:hover {
-  background-color: transparent;
-  border: 2px solid white;
-}
+/* form with sub */
 .but {
   width: 100%;
   height: 300px;
   background-color: rgb(115, 119, 122);
   position: absolute;
-  top: 3530px;
+  top: 3500px;
+  text-align: center;
 }
+.but h1{
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.email-input {
+  width: 50%;
+  padding: 10px;
+  margin-top: 30px;
+}
+form{
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.submit-button {
+  background-color: rgb(115, 119, 122);
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  border: 2px solid white;
+  margin-top: 10px;
+}
+.submit-button:hover {
+  background-color: white;
+  cursor: pointer;
+  color: rgb(115, 119, 122);
+}
+/* .email-form {
+  text-align: center;
+  background-color: transparent;
+  border: solid 2px white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 3610px;
+  left: 1200px;
+} */
+
+/* thanks.html */
 .thank-you-container {
   text-align: center;
   max-width: 500px;
@@ -615,23 +616,6 @@ h3 {
   color: white;
   font-size: 18px;
   line-height: 1.5;
-}
-.zxc {
-  position: absolute;
-  top: 3600px;
-  left: 300px;
-  font-size: 60px;
-  font-weight: 700;
-  color: white;
-}
-.nnn {
-  position: absolute;
-  width: 500px;
-  top: 3670px;
-  left: 300px;
-  font-size: 20px;
-  font-weight: 300;
-  color: white;
 }
 .nem {
   width: 100%;
