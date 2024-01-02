@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   font-family: "Antonio", sans-serif;
   font-family: "Josefin Sans", sans-serif;
@@ -19,8 +21,16 @@ header {
   backdrop-filter: blur(50px);
   justify-content: space-between;
 }
+header h2:hover {
+  cursor: pointer;
+  color: transparent;
+    -webkit-text-stroke: 1px white;
+  transform: scale(110%);
+  transition: 0.5s ease-in-out;
+}
 .logo {
-  font-size: 2.3rem;
+  font-size: 2rem;
+  font-weight: 500;
   color: rgb(255, 255, 255);
   user-select: none;
 }
@@ -275,12 +285,7 @@ header {
   color: rgb(165, 176, 184);
   border: solid 2px rgb(165, 176, 184);
 }
-/* working on this for carousel */
-.slider {
-  position: absolute;
-  top: 2500px;
-  left: 50px;
-}
+
 /* not sure what these are for */
 .barx {
   width: 100%;
@@ -310,12 +315,33 @@ header {
   top: 2600px;
   border: solid 2px white;
 }
-.cover {
+/* working on this for carousel */
+.slider {
+  position: absolute;
+  /* top: 2500px; */
+  left: 50px;
+}
+.body{
+margin: 0;
+padding: 0;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+top: 2350px;
+position: absolute;
+background: white;
+
+}
+#slide3 {
+  position: absolute;
+  color: antiquewhite;
+  top: 2500;
+}
+/* .cover {
   position: absolute;
   top: 2620px;
-  /* width:50%; */
   height: 400px;
-  /* display: flex; */
   gap: 110px;
   margin: 3%;
 }
@@ -324,35 +350,26 @@ header {
   top: 3090px;
   width: 97%;
   height: 400px;
-  /* display: flex; */
   gap: 110px;
   margin: 3%;
-}
+} */
 
 /*probably start of css for about.html, everything above is index.html  */
-.navbar {
-  place-self: center;
-}
-header h2:hover {
-  cursor: pointer;
-  /* color: transparent;
-    -webkit-text-stroke: 1px white; */
-  transform: scale(110%);
-  transition: all 0.5s ease-in-out;
-}
+
+/* about.css */
 .abt {
-  width: 600px;
+  width: 45%;
   position: absolute;
-  top: 200px;
-  left: 320px;
+  top: 160px;
+  left: 20px;
   opacity: 60%;
   border: solid 2px white;
 }
 .abt2 {
-  width: 600px;
+  width: 45%;
   position: absolute;
-  top: 200px;
-  left: 1000px;
+  top: 160px;
+  left: 700px;
   opacity: 60%;
   border: solid 2px white;
 }
@@ -361,7 +378,7 @@ header h2:hover {
   font-size: 40px;
   position: absolute;
   top: 400px;
-  left: 320px;
+  left: 20px;
   text-align: center;
   width: 600px;
   font-weight: 700;
@@ -371,7 +388,7 @@ header h2:hover {
   font-size: 20px;
   position: absolute;
   top: 600px;
-  left: 420px;
+  left: 120px;
   text-align: center;
   width: 400px;
   font-weight: 500;
@@ -383,7 +400,7 @@ header h2:hover {
   color: rgb(50, 62, 70);
   position: absolute;
   top: 900px;
-  left: 555px;
+  left: 255px;
   border: none;
 }
 .more:hover {
@@ -475,45 +492,12 @@ header h2:hover {
   left: 850px;
   border: solid 2px white;
 }
-.ww {
-  position: absolute;
-  width: 450px;
-  top: 1250px;
-  left: 1350px;
-  border: solid 2px white;
-}
 .ee {
   position: absolute;
   width: 450px;
   top: 1525px;
   left: 850px;
   border: solid 2px white;
-}
-.rr {
-  position: absolute;
-  width: 450px;
-  top: 1525px;
-  left: 1350px;
-  border: solid 2px white;
-}
-.ready {
-  position: absolute;
-  top: 1880px;
-  left: 100px;
-  font-size: 60px;
-  font-weight: 700;
-  color: white;
-}
-.fet a {
-  position: relative;
-  font-size: 1rem;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-weight: 700;
-  margin-left: 40px;
-  top: 1900px;
-  left: 700px;
-  justify-content: space-between;
 }
 .can {
   width: 100%;

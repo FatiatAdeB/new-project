@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
+    <title>Fanctom</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,25 +15,16 @@
   </head>
   <body>
     <header>
-        <h2 class="logo">Travels</h2>
-        <nav class="navbar">
-          <a href="#">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="contact.html">Contact Us</a>
-          <a href="store.html">Store</a>
-        </nav>
-    </header>
-
-    <!-- <header>
-      <h2 class="lego">Travels</h2>
+     <h2 class="logo"><button>Fanctom</button></h2>
       <nav class="navbar">
           <a href="index.html">Home</a>
           <a href="about.html">About Us</a>
           <a href="#">Contact Us</a>
           <a href="store.html">Store</a>
+          <a href="services.html">Services</a>
       </nav>
       <button class="jjk">CONTACT US</button>
-  </header> -->
+  </header>
 
     <img class="background-image" src="./images/background.jpg" alt="Background Image"/>
     <div class="lemon">
@@ -88,6 +79,8 @@
 
     <!-- Carousel -->
     <!-- <div class="bary"></div> -->
+
+    <main class="body">
 <!-- slider start -->
 <div class="slider">
   <div class="slides">
@@ -96,8 +89,49 @@
     <input type="radio" name="radio-btn" id="radio2">
     <input type="radio" name="radio-btn" id="radio3">
     <input type="radio" name="radio-btn" id="radio4">
+    <input type="radio" name="radio-btn" id="radio5">
+    <!-- radio button end -->
+    <!-- slide images start -->
+    <div class="slide-first">
+      <img src="./images/fi2.jpg" alt="">
+    </div>
+    <div class="slide">
+      <img src="./images/fi3.jpg" alt="">
+    </div>
+    <div id="slide3" class="slide">
+      <img src="./images/fi4.jpg" alt="">
+    </div>
+    <div id="slide4" class="slide">
+      <img src="./images/fi5.jpg" alt="">
+    </div>
+    <div id="slide5" class="slide">
+      <img src="./images/fi6.jpg" alt="">
+    </div>
+
+    <!-- slide images end -->
+    <!-- auto nav start -->
+    <div class="nav-auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+      <div class="auto-btn5"></div>
+    </div>
+    <!-- auto nav end -->
   </div>
+  <!-- manual nav start -->
+  <div class="nav-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+    <label for="radio5" class="manual-btn"></label>
+  </div>
+  <!-- manual nav end-->
+
 </div>
+</main>
+
     <!-- <div class="cover">
       <img src="./images/fi1.jpg" alt="#" />
       <img src="./images/fi2.jpg" alt="#" />
