@@ -492,73 +492,93 @@ background: white;
 }
 .bad {
   position: absolute;
-  top: 1960px;
+  top: 1920px;
   left: 300px;
   font-size: 3.5rem;
   font-weight: 600;
   color: white;
 }
-.can {
-  width: 100%;
-  height: 200px;
-  background-color: rgb(106, 116, 121);
+.slider {
+  top: 2000px;
+  /* left: 0; */
   position: absolute;
-  top: 2010px;
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.pop {
-  position: absolute;
-  top: 2290px;
-  left: 80px;
-  border: solid 2px white;
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+
 }
-.sci {
-  position: absolute;
-  top: 2290px;
-  left: 670px;
-  border: solid 2px white;
+.slides input{
+  display: none;
 }
-.cle {
-  position: absolute;
-  top: 2290px;
-  left: 1260px;
-  border: solid 2px white;
+.slide {
+  width: 20%;
+  transition: 2s;
 }
-.popi {
-  position: absolute;
-  top: 2915px;
-  left: 80px;
-  border: solid 2px white;
+.slide img{
+  width: 800px;
+  height: 500px;
 }
-.scii {
-  position: absolute;
-  top: 2915px;
-  left: 670px;
-  border: solid 2px white;
+/* css for manual slide nav*/
+.nav-manual{
+position: absolute;
+width: 800px;
+margin-top: -40px;
+display: flex;
+justify-content: center;
 }
-.clei {
-  position: absolute;
-  top: 2915px;
-  left: 1260px;
-  border: solid 2px white;
+.manual-btn{
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
 }
-/* form with sub */
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+.manual-btn:hover{
+  background: blue;
+}
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+
+/* subscribe form */
 .but {
   width: 100%;
   height: 300px;
   background-color: rgb(115, 119, 122);
   position: absolute;
-  top: 3500px;
+  top: 3000px;
   text-align: center;
 }
 .but h1{
   color: white;
   font-weight: 700;
   font-size: 3rem;
+  margin: 10px;
 }
 .email-input {
   width: 50%;
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 10px;
+  box-sizing: border-box;
 }
 form{
   margin-top: 10px;
@@ -579,17 +599,6 @@ form{
   cursor: pointer;
   color: rgb(115, 119, 122);
 }
-/* .email-form {
-  text-align: center;
-  background-color: transparent;
-  border: solid 2px white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 3610px;
-  left: 1200px;
-} */
 
 /* thanks.html */
 .thank-you-container {
@@ -617,13 +626,13 @@ h3 {
   font-size: 18px;
   line-height: 1.5;
 }
-.nem {
+/* .nem {
   width: 100%;
   height: 10px;
   position: absolute;
   top: 4000px;
   background-color: rgb(50, 62, 70);
-}
+} */
 .end {
   position: absolute;
   top: 3900px;
@@ -632,6 +641,8 @@ h3 {
   font-weight: 700;
   color: white;
 }
+/* contact.css */
+
 /* .ggg{
     width: 1500px;
     position: absolute;
@@ -873,12 +884,12 @@ h3 {
   word-spacing: 200px;
 }
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
   .background-image {
     width: 100%;
     margin: auto;
     height: 500px;
-  }
+  } 
   .lemon h1 {
     top: 220px;
     left: 0px;
@@ -902,9 +913,9 @@ h3 {
   }
   .up,
   .down {
-    /* left: 9px;
+    left: 9px;
         width: 95%;
-        top: 1050px; */
+        top: 1050px;
     display: none;
   }
   .bar {
@@ -935,7 +946,7 @@ h3 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    left: 0;
+    left: 0; 
     margin-top: 20px;
   }
   #boxim2 {
@@ -944,5 +955,12 @@ h3 {
   .money {
     top: 1600px;
     left: 0;
+  }
+}*/
+@media (max-width:425px) {
+  .background-image{
+    width: 100%;
+    margin: auto;
+
   }
 }
