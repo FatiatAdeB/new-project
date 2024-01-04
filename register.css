@@ -7,15 +7,17 @@
 body{
     width: 100%;
     height: 100vh;
-    /* display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; */
+    min-height: 100vh;
     background: url(./images/travel\ bg.jpg) center / cover no-repeat;
-    /* background-size: cover;
-    background-position: center; */
 }
-
+/* .logo {
+    font-size: 2rem;
+    color: white;
+    user-select: none;
+} */
 
 header{
     position: fixed;
@@ -29,11 +31,7 @@ header{
     align-items: center;
     z-index: 99; */
 }
-/* .logo {
-    font-size: 2rem;
-    color: white;
-    user-select: none;
-} */
+
 .navbar {
     display: flex;
     padding: 22px 0;
@@ -41,6 +39,12 @@ header{
     max-width: 1200px;
     margin: 0 auto;
     justify-content: space-between;
+}
+.navbar .icon-menu{
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 .navbar .logo{
     display: flex;
@@ -53,14 +57,19 @@ color: white;
     font-size: 1.7rem;
     font-weight: 600;
 }
-.navbar .logo img{
-    width: 40px;
-    border-radius: 50%;
-}
 .navbar .links{
     display: flex;
     list-style: none;
     gap: 35px;
+}
+.navbar .links .iconclose{
+    display: none;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.5rem;
 }
 .navbar .links a{
     color: white;
@@ -82,45 +91,46 @@ border-radius: 3px;
 cursor: pointer;
 background: white;
 }
+
 @media (max-width: 950px){
+    .navbar :is(.icon-menu, .links .iconclose){
+       display: block; 
+    }
     .navbar{
         padding: 15px 0;
-    }
-    .navbar .logo img{
-        display: none;
     }
     .navbar .logo h2{
         font-size: 1.4rem;
     }
     .navbar .links{
-        /* display: none; */
         position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100vh;
-        background: gray;
-        /* position: fixed;
-        left: 0;
+        left: -100%;
         top: 0;
         width: 100%;
         height: 100vh;
         display: block;
         padding-top: 60px;
         text-align: center;
-        background: white; */
+        background: gray;
+        transition: 0.2s ease;
     }
-    /* .navbar .links a{
+    .navbar .links.show-menu{
+        left: 0;
+    }
+    .navbar .links a{
         color: black;
         display: inline-flex;
         margin: 20px 0;
         font-size: 1.2rem;
-    } */
+    }
     .navbar .btnLogin-popup{
         font-size: 0.9rem;
         padding: 7px 10px;
     }
+    
 }
+
+/* @media (max-width: 950px) */
 /* .navigation{
     display: flex;
     justify-content: space-between;
