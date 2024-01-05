@@ -80,6 +80,76 @@
   cursor: pointer;
   background: white;
   }
+  .top{
+    margin-top: 100px;
+    text-align: center;
+  }
+  .top h2{
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: white;
+  }
+.offer{
+    /* margin-top: 100px; */
+
+}
+.main1{
+    display: flex;
+}
+.main2{
+    display: flex;
+}
+.serv1{
+    width: 40%;
+    height: 400px;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    background-image: url(./images/bag.jpg);
+    background-size: contain;
+}
+.serv2{
+    width: 40%;
+    height: 400px;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    background-image: url(./images/bag.jpg);
+    background-size: contain;
+}.serv3{
+    width: 40%;
+    height: 400px;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    background-image: url(./images/bag.jpg);
+    background-size: contain;
+}.serv4{
+    width: 40%;
+    height: 400px;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    background-image: url(./images/bag.jpg);
+    background-size: contain;
+}
+.news{
+    margin-top: 50px;
+}
+.news p{
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
   @media (max-width: 950px){
     .navbar :is(.icon-menu, .links .iconclose){
        display: block; 
@@ -116,4 +186,16 @@
         padding: 7px 10px;
     }
     
+  }
+  @media (max-width:425px) {
+    .main1{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .main2{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
   }

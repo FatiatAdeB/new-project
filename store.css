@@ -80,6 +80,53 @@
   cursor: pointer;
   background: white;
   }
+.shop{
+  margin-top: 100px;
+  font-weight: 600;
+  font-size: 2.8rem;
+  color: white;
+  text-align: center;
+}
+.stock{
+  margin: 10px;
+}
+.part1{
+  display: flex;
+}
+.part1 img{
+  width: 45%;
+  height: 500px;
+}
+.part2{
+  display: flex;
+}
+.part2 img{
+  width: 45%;
+  height: 500px;
+}
+.part3{
+  display: flex;
+}
+.part3 img{
+  width: 45%;
+  height: 500px;
+}
+.part4{
+  display: flex;
+}
+.part4 img{
+  width: 45%;
+  height: 500px;
+}
+.part5{
+  display: flex;
+}
+.part5 img{
+  width: 45%;
+  height: 500px;
+}
+
+
   @media (max-width: 950px){
     .navbar :is(.icon-menu, .links .iconclose){
        display: block; 
@@ -116,4 +163,98 @@
         padding: 7px 10px;
     }
     
+  }
+  @media (max-width:425px){
+    .part1{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+    .part1 img{
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+    .part2{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+    .part2 img{
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+    .part3{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+    .part3 img{
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+    .part4{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+    .part4 img{
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+    .part5{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+    .part5 img{
+      width: 100%;
+      height: auto;
+      margin: auto;
+    }
+  }
+  @media (max-width:768px){
+    .part1{
+      margin: auto;
+    }
+    .part1 img{
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .part2{
+      margin: auto;
+    }
+    .part2 img{
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .part3{
+      margin: auto;
+    }
+    .part3 img{
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .part4{
+      margin: auto;
+    }
+    .part4 img{
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .part5{
+      margin: auto;
+    }
+    .part5 img{
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
