@@ -192,7 +192,7 @@ top: 2005px;
 
 .ribi {
 width: 100%;
-position: absolute;
+/* position: absolute; */
 opacity: 60%;
 }
 .pillow {

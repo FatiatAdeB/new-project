@@ -40,8 +40,11 @@ header{
     text-decoration: none;
     align-items: center;
 }
+.navbar .logo h2:hover{
+    color: white;
+}
 .navbar .logo h2{
-color: white;
+color: #162938;
     font-size: 1.7rem;
     font-weight: 600;
 }
@@ -60,26 +63,36 @@ color: white;
     font-size: 1.5rem;
 }
 .navbar .links a{
-    color: white;
+    /* color: white; */
+    color: #162938;
+
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 500;
 }
 .navbar .links a:hover{
-    color: aqua;
+    color: white;
+
+    /* color: #162938; */
 }
 .navbar .btnLogin-popup{
 border: none;
 outline: none;
-color: #162938;
+/* color: #162938; */
+color: white;
 font-size: 1rem;
 font-weight: 600;
 padding: 10px 18px;
 border-radius: 3px;
 cursor: pointer;
-background: white;
+/* background: white; */
+background: #162938;
 }
+.navbar .btnLogin-popup:hover{
+    background: transparent;
+    color: white;
 
+}
 @media (max-width: 950px){
     .navbar :is(.icon-menu, .links .iconclose){
        display: block; 
@@ -176,7 +189,7 @@ background: white;
     background: transparent;
     border: 2px solid rgba(255,255,255, .5);
     border-radius: 20px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(25px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
