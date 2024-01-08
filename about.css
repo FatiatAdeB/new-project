@@ -364,9 +364,10 @@
   }
   .email-input {
     width: 50%;
-    padding: 10px;
+    padding: 1em;
     margin-top: 10px;
     box-sizing: border-box;
+    border-radius: 0.5em;
   }
   form{
     margin-top: 10px;
@@ -386,6 +387,47 @@
     background-color: white;
     cursor: pointer;
     color: rgb(115, 119, 122);
+  }
+  footer{
+    position: absolute;
+    top: 2950px;
+    left: 500px;
+  }
+  
+  footer h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+  footer h2{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+  }
+  footer h4{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 8px;
+  }
+  .fanct{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    /* position: absolute; */
+    /* top: ; */
+  }
+  .icon-logo {
+    display: flex;
+  }
+  .fb_icon{
+    color: white;
+    padding: 30px;
+  }
+  .fb_icon:hover {
+    color: lightblue;
   }
   @media (max-width: 950px){
     .navbar :is(.icon-menu, .links .iconclose){
@@ -427,6 +469,5 @@
   @media (max-width: 425px){
     .abt{
       width: 100%;
-      m
     }
   }
