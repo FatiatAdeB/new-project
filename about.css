@@ -20,7 +20,6 @@
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(50px);
   }
-  
   .navbar {
     display: flex;
     padding: 22px 0;
@@ -46,6 +45,13 @@
     font-size: 1.7rem;
     font-weight: 600;
   }
+  .navbar .logo h2:hover {
+    cursor: pointer;
+    color: transparent;
+      -webkit-text-stroke: 1px white;
+    transform: scale(110%);
+    transition: 0.5s ease-in-out;
+  }
   .navbar .links{
     display: flex;
     list-style: none;
@@ -61,26 +67,42 @@
     font-size: 1.5rem;
   }
   .navbar .links a{
-    color: white;
+    position: relative;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 1.1rem;
     font-weight: 500;
   }
-  .navbar .links a:hover{
-    color: aqua;
+  .navbar .links a::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+  .navbar .links a:hover::after {
+    transform: scaleX(0.8);
   }
   .navbar .btnLogin-popup{
-  border: none;
-  outline: none;
-  color: #162938;
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 10px 18px;
-  border-radius: 3px;
-  cursor: pointer;
-  background: white;
-  }
-  
+    border: none;
+    outline: none;
+    color: #162938;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    background: white;
+    }
+    .navbar .btnLogin-popup:hover{
+        background: transparent;
+        color: white;
+    }  
 .abt {
     width: 45%;
     position: absolute;
@@ -222,66 +244,108 @@
     font-weight: 600;
     color: white;
   }
-  .slider {
+  .body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
     top: 2000px;
-    /* left: 0; */
+    left: 300px;
+    }
+    .slider {
+       width: 800px;
+       height: 500px;
+       border-radius: 10px;
+       overflow: hidden;
+    }
+    .slides{
+      width: 500%;
+      height: 500px;
+      display: flex;
+    }
+    .slides input{
+      display: none;
+    
+    }
+    .slide {
+      width: 20%;
+      transition: 2s;
+    }
+    .slide img{
+      width: 800px;
+      height: 500px;
+    }
+    /* manual slide navigation */
+    .nav-manual{
     position: absolute;
     width: 800px;
-    height: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  .slides {
-    width: 500%;
-    height: 500px;
+    margin-top: -40px;
     display: flex;
-  
-  }
-  .slides input{
-    display: none;
-  }
-  .slide {
-    width: 20%;
-    transition: 2s;
-  }
-  .slide img{
+    justify-content: center;
+    }
+    .manual-btn{
+      border: 2px solid #48D3DC;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 1s;
+    }
+    .manual-btn:not(:last-child){
+       margin-right: 40px;
+    }
+    .manual-btn:hover{
+      background: rgb(50, 62, 70);
+    }
+    #radio1:checked ~ .first{
+      margin-left: 0;
+    }
+    #radio2:checked ~ .first{
+      margin-left: -40%;
+    }
+    #radio3:checked ~ .first{
+      margin-left: -80%;
+    }
+    #radio4:checked ~ .first{
+      margin-left: -120%;
+    }
+    #radio5:checked ~ .first{
+      margin-left: -160%;
+    }
+    /* automatic nav */
+    .nav-auto{
+      position: absolute;
+      display: flex;
     width: 800px;
-    height: 500px;
-  }
-  /* css for manual slide nav*/
-  .nav-manual{
-  position: absolute;
-  width: 800px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-  }
-  .manual-btn{
-    border: 2px solid blue;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-  }
-  .manual-btn:not(:last-child){
-    margin-right: 40px;
-  }
-  .manual-btn:hover{
-    background: blue;
-  }
-  #radio1:checked ~ .first{
-    margin-left: 0;
-  }
-  #radio2:checked ~ .first{
-    margin-left: -20%;
-  }
-  #radio3:checked ~ .first{
-    margin-left: -40%;
-  }
-  #radio4:checked ~ .first{
-    margin-left: -60%;
-  }
-  
+    justify-content: center;
+    margin-top: 460px;
+    }
+    .nav-auto div{
+      border: 2px solid #48D3DC;
+      padding: 5px;
+      border-radius: 10px;
+      transition: 1s;
+    }
+    .nav-auto div:not(:last-child){
+      margin-right: 40px;
+    }
+    #radio1:checked ~ .nav-auto .auto-btn1{
+      background: #48D3DC;
+    }
+    #radio2:checked ~ .nav-auto .auto-btn2{
+      background: #48D3DC;
+    }
+    #radio3:checked ~ .nav-auto .auto-btn3{
+      background: #48D3DC;
+    }
+    #radio4:checked ~ .nav-auto .auto-btn4{
+      background: #48D3DC;
+    }
+    #radio5:checked ~ .nav-auto .auto-btn5{
+      background: #48D3DC;
+    }
   
   /* subscribe form */
   .but {
@@ -289,7 +353,7 @@
     height: 300px;
     background-color: rgb(115, 119, 122);
     position: absolute;
-    top: 3000px;
+    top: 2600px;
     text-align: center;
   }
   .but h1{

@@ -20,7 +20,6 @@ header{
   background-color: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(50px);
 }
-
 .navbar {
   display: flex;
   padding: 22px 0;
@@ -46,6 +45,13 @@ color: white;
   font-size: 1.7rem;
   font-weight: 600;
 }
+.navbar .logo h2:hover {
+  cursor: pointer;
+  color: transparent;
+    -webkit-text-stroke: 1px white;
+  transform: scale(110%);
+  transition: 0.5s ease-in-out;
+}
 .navbar .links{
   display: flex;
   list-style: none;
@@ -61,49 +67,13 @@ color: white;
   font-size: 1.5rem;
 }
 .navbar .links a{
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-.navbar .links a:hover{
-  color: aqua;
-}
-.navbar .btnLogin-popup{
-border: none;
-outline: none;
-color: #162938;
-font-size: 1rem;
-font-weight: 600;
-padding: 10px 18px;
-border-radius: 3px;
-cursor: pointer;
-background: white;
-}
-
-/* 
-header h2:hover {
-  cursor: pointer;
-  color: transparent;
-    -webkit-text-stroke: 1px white;
-  transform: scale(110%);
-  transition: 0.5s ease-in-out;
-}
-.logo {
-  font-size: 2rem;
-  font-weight: 500;
-  color: rgb(255, 255, 255);
-  user-select: none;
-}
-.navbar a {
   position: relative;
   font-size: 1.2rem;
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: 500;
-  margin-left: 80px;
 }
-.navbar a::after {
+.navbar .links a::after {
   content: " ";
   position: absolute;
   width: 100%;
@@ -115,9 +85,24 @@ header h2:hover {
   transform: scaleX(0);
   transition: transform 0.5s;
 }
-.navbar a:hover::after {
+.navbar .links a:hover::after {
   transform: scaleX(0.8);
-} */
+}
+.navbar .btnLogin-popup{
+  border: none;
+  outline: none;
+  color: #162938;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: white;
+  }
+  .navbar .btnLogin-popup:hover{
+      background: transparent;
+      color: white;
+  }
 
 .bg-trav{
   margin-top: 100px;
@@ -138,7 +123,7 @@ margin-top: 150px;
 .lemon h1 {
   color: white;
   font-size: 60px;
- 
+ padding-bottom: 20px;
 }
 .lemon p {
   color: white;
@@ -164,8 +149,6 @@ margin-top: 150px;
 .welcomes{
   width: 100%;
   height: 500px;
-  /* border: solid 2px white; */
-  margin-top: 10px;
   display: flex;
   
 }
@@ -192,7 +175,7 @@ margin-top: 150px;
   color: white;
   line-height: 2em;
   padding-left: 30px;
-  padding-top: 150px;
+  padding-top: 180px;
 }
 .up {
   width: 400px;
@@ -202,9 +185,9 @@ margin-top: 150px;
   width: 100%;
   height: 600px;
   line-height: 5em;
-  background-image: url(./images/servicesbg.jpg);
+  /* background-image: url(./images/servicesbg.jpg);
 background-size: cover;
-background-repeat: no-repeat;
+background-repeat: no-repeat; */
 }
 .serv {
   color: white;
@@ -220,10 +203,11 @@ margin-top: 10px;
 }
 .fettish a {
   position: relative;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: rgb(255, 255, 255);
+  /* color: #162938; */
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
   margin-left: 30px;
   justify-content: space-between;
  left: 200px;
@@ -234,6 +218,7 @@ margin-top: 10px;
   width: 100%;
   height: 3px;
   background: white;
+  /* background: #162938; */
   border-radius: 5px;
   left: 0;
   bottom: -6px;
@@ -243,7 +228,15 @@ margin-top: 10px;
 .fettish a:hover::after {
   transform: scaleX(0.8);
 }
-
+.images{
+  display: flex;
+  width: 100%;
+}
+.images img{
+  width: 25%;
+  padding: 8px;
+  height: 370px;
+}
 .items {
   text-align: center;
 }
@@ -256,6 +249,11 @@ margin-top: 10px;
   color: white;
   font-size: 50px;
   font-weight: 500;
+}
+.items h1:hover {
+  cursor: pointer;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
 }
 .box-image {
   display: flex;
@@ -396,10 +394,33 @@ margin-top: 460px;
 #radio5:checked ~ .nav-auto .auto-btn5{
   background: #48D3DC;
 }
+footer{
+  margin-top: 30px;
+}
 footer h1{
   color: white;
-  font-size: 60px;
+  font-size: 50px;
+  text-align: center;
 }
+.fanct h1{
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 30px;
+}
+.icon-logo {
+  display: flex;
+  margin-top: 20px;
+}
+
+.fb_icon{
+  color: white;
+  padding: 30px;
+}
+.fb_icon:hover {
+  color: lightblue;
+}
+
 @media (max-width: 950px){
   .navbar :is(.icon-menu, .links .iconclose){
      display: block; 
