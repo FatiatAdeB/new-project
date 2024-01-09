@@ -111,6 +111,13 @@
   color: white;
   text-align: center;
 }
+.advert{
+  /* margin-top: 100px; */
+  font-weight: 400;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
 .stock{
   margin: 10px;
 }
@@ -342,7 +349,7 @@
         display: block;
         padding-top: 60px;
         text-align: center;
-        background: gray;
+        background: #162938;
         transition: 0.2s ease;
     }
     .navbar .links.show-menu{

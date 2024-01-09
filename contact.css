@@ -104,55 +104,77 @@ body {
         background: transparent;
         color: white;
     }
-/* .ribi {
+.ribi {
+  
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   opacity: 60%;
-} */
+}
 .cov {
-  width: 900px;
+  /* width: 100%; */
+  /* width: 900px; */
     font-size: 80px;
     font-weight: 600;
     text-align: center;
     color: #fff;
-    margin-top: 100px;
-    margin-left: 250px;
-    
+    /* margin-top: 100px;
+    margin-left: 250px; */
+    /* position: absolute;
+    top: 300px; */
 }
-.one {
-font-size: 30px;
-font-weight: 500;
+
+.days{
+  background: url(images/clock.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10rem;
+  padding-block: 2rem;
+}
+
+.days div{
+  margin-bottom: 2rem;
+}
+
+.one, .two, .wed, .thur, .fri, .saturn {
+font-size: 20px;
+font-weight: 300;
 color: white;
 display: flex;
 justify-content: space-evenly;
+line-height: 2em;
 }
-.two{
+.one, .two, .wed, .thur, .fri, .saturn p{
   font-size: 30px;
-  font-weight: 500;
-  color: white;
-  display: flex;
-  justify-content: space-evenly;
+font-weight: 300;
+color: white;
 }
-.wed{
-  font-size: 30px;
-  font-weight: 500;
-  color: white;
-  display: flex;
-  justify-content: space-evenly;
-}
-.thur{
-  font-size: 30px;
-  font-weight: 500;
-  color: white;
-  display: flex;
-  justify-content: space-evenly;
-}
-.fri{
-  font-size: 30px;
-  font-weight: 500;
-  color: white;
-  display: flex;
-  justify-content: space-evenly;
+/* .two{
+  font-size: 20px;
+font-weight: 300;
+color: white;
+display: flex;
+justify-content: space-evenly;
+} */
+/* .wed{
+  font-size: 20px;
+font-weight: 300;
+color: white;
+display: flex;
+justify-content: space-evenly;
+} */
+/* .thur{
+  font-size: 20px;
+font-weight: 300;
+color: white;
+display: flex;
+justify-content: space-evenly;
+} */
+/* .fri{
+  font-size: 20px;
+font-weight: 300;
+color: white;
+display: flex;
+justify-content: space-evenly;
 }
 .saturn{
   font-size: 30px;
@@ -160,30 +182,34 @@ justify-content: space-evenly;
   color: white;
   display: flex;
   justify-content: space-evenly;
-}
+} */
 .location{
   margin-top: 10px;
 }
 
-.pillow {
-font-size: 70px;
+.pillow  {
+font-size: 60px;
 font-weight: 600;
 text-align: center;
 color: #fff;
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 2rem;
 }
 .pillow hr {
 width: 400px;
-text-align: center;
-align-items: center;
-padding-left: 300px;
 }
-.story {
-font-size: 30px;
-font-weight: 300;
-width: 500px;
-text-align: center;
-align-items: center;
-color: #fff;
+.pillow .story{
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 20px;
+  line-height: 2em;
+}
+.push-down{
+  margin-top: 30px;
+  margin-bottom: 3rem;
 }
 .phone-flex{
 font-size: 40px;
@@ -204,10 +230,10 @@ text-align: center;
 color: #fff;
 display: flex;
 justify-content: space-evenly;
-/* flex-direction: column;
-word-spacing: 200px; */
 }
-
+.boxmap{
+  width: 100%;
+}
 footer{
   margin-top: 30px;
 }
@@ -229,9 +255,6 @@ footer h4{
   padding-top: 8px;
 }
 .fanct{
-  /* 
-  text-align: center;
-  padding-top: 30px; */
   color: white;
   font-size: 20px;
   display: flex;
@@ -303,7 +326,7 @@ form{
         display: block;
         padding-top: 60px;
         text-align: center;
-        background: gray;
+        background: #162938;
         transition: 0.2s ease;
     }
     .navbar .links.show-menu{
@@ -321,4 +344,6 @@ form{
     }
     
   }
-  
+  @media (max-width:768px){
+
+  }
