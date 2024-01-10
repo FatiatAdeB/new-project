@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fanctom</title>
+<!-- slider -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
     <script src="https://kit.fontawesome.com/a509921b55.js" crossorigin="anonymous"></script>
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -83,7 +87,7 @@
       </div>
   </section>
 <!-- FEATURES -->
-<section class="featsss">
+  <section class="featsss">
       <div class="items">
           <h2>Featured Items</h2>
           <h1>Everyone's Favourite</h1>
@@ -93,74 +97,51 @@
           <img id="boxim2" class="boxim"src="./images/fi2.jpg" alt="" />
       </div>
       <section class="flex">
-    <section class="money">
-      <div class="feat">Featured Item 1</div>
-      <div class="aa">100 USD</div>
-      <button class="zedo">VIEW MORE</button>
-    </section>
-    <section class="money1">
-      <div class="feat">Featured Item 2</div>
-      <div class="aa">150 USD</div>
-      <button class="zedo">VIEW MORE</button>
-    </section>
+        <section class="money">
+          <div class="feat">Featured Item 1</div>
+          <div class="aa">100 USD</div>
+          <button class="zedo">VIEW MORE</button>
+        </section>
+        <section class="money1">
+          <div class="feat">Featured Item 2</div>
+          <div class="aa">150 USD</div>
+          <button class="zedo">VIEW MORE</button>
+        </section>
+      </section>
   </section>
+<!-- slider -->
+<div class="testimonial-container">
+  <h2 class="heading">Valuable <span>Testimonials</span></h2>
 
-  </section>
-    <!-- Carousel -->
-    <main class="body">
-<!-- slider start -->
-<div class="slider">
-  <div class="slides">
-    <!-- radio button start -->
-    <input type="radio" name="radio-btn" id="radio1">
-    <input type="radio" name="radio-btn" id="radio2">
-    <input type="radio" name="radio-btn" id="radio3">
-    <input type="radio" name="radio-btn" id="radio4">
-    <input type="radio" name="radio-btn" id="radio5">
-    <!-- radio button end -->
-    <!-- slide images start -->
-    <div class="slide first">
-      <img src="./images/fi2.jpg" alt="">
-    </div>
-    <div class="slide">
-      <img src="./images/fi3.jpg" alt="">
-    </div>
-    <div id="slide3" class="slide">
-      <img src="./images/fi4.jpg" alt="">
-    </div>
-    <div id="slide4" class="slide">
-      <img src="./images/fi5.jpg" alt="">
-    </div>
-    <div id="slide5" class="slide">
-      <img src="./images/fi6.jpg" alt="">
-    </div>
-    <!-- slide images end -->
+  <div class="testimonial-wrapper">
+      <div class="testimonial-box mySwiper">
+          <div class="testimonial-content swiper-wrapper">
+              <div class="testimonial-slide swiper-slide">
+                  <img src="./images/background.jpg" alt="">
+                  <h3>Humaam Ghazaal</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, cum provident? Iste harum, saepe molestiae et ab culpa praesentium natus labore voluptatibus voluptatem quod, facilis reiciendis placeat eligendi magni nam?</p>
+                  
+              </div>
+              <div class="testimonial-slide swiper-slide">
+                  <img src="./images/Carousel (3).jpg" alt="">
+                  <h3>Fareed Zakariyyah</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, cum provident? Iste harum, saepe molestiae et ab culpa praesentium natus labore voluptatibus voluptatem quod, facilis reiciendis placeat eligendi magni nam?</p>
+                  
+              </div>
+              <div class="testimonial-slide swiper-slide">
+                  <img src="./images/" alt="">
+                  <h3>Hikmah Adetunji</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, cum provident? Iste harum, saepe molestiae et ab culpa praesentium natus labore voluptatibus voluptatem quod, facilis reiciendis placeat eligendi magni nam?</p>
+                  
+              </div>
+          </div>
 
-    <!-- auto nav start -->
-    <div class="nav-auto">
-      <div class="auto-btn1"></div>
-      <div class="auto-btn2"></div>
-      <div class="auto-btn3"></div>
-      <div class="auto-btn4"></div>
-      <div class="auto-btn5"></div>
-    </div>
-    <!-- auto nav end -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+      </div>
   </div>
-
-  <!-- manual nav start -->
-  <div class="nav-manual">
-    <label for="radio1" class="manual-btn"></label>
-    <label for="radio2" class="manual-btn"></label>
-    <label for="radio3" class="manual-btn"></label>
-    <label for="radio4" class="manual-btn"></label>
-    <label for="radio5" class="manual-btn"></label>
-  </div>
-  <!-- manual nav end-->
-
 </div>
-<!-- slider end -->
-</main>
-
    
     <footer>
       <h1> Fanctom</h1>
@@ -189,9 +170,14 @@
         </div>
     </footer>
 
+     <!-- swiper  -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./home.js"></script>
     <script src="./script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
 
+    

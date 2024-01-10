@@ -11,6 +11,13 @@ body {
   background-color: rgb(50, 62, 70);
   scroll-behavior: smooth;
 }
+:root {
+  --bg-color: #162938;
+  --text-color: #333;
+  --main-color: #754ef9;
+  --white-color: #fdfdfd;
+  --shadow-color: rgba(0, 0, 0, .2);
+}
 header {
   position: fixed;
   top: 0;
@@ -99,7 +106,6 @@ header {
   border-radius: 3px;
   cursor: pointer;
   background: white;
-  border-radius: 2em;
 }
 .navbar .btnLogin-popup:hover {
   background: transparent;
@@ -110,12 +116,12 @@ header {
   margin-top: 100px;
   width: 100%;
   height: 500px;
-  background-image: url(./images/background.jpg);
+  background-image: url(./images/signin.bg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border: solid 2px white;
-  /* opacity: 70%; */
+  opacity: 70%;
 }
 .lemon {
   line-height: 2em;
@@ -129,6 +135,8 @@ header {
 }
 .lemon p {
   color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 .lemon h1:hover {
   cursor: pointer;
@@ -186,9 +194,6 @@ header {
   width: 100%;
   height: 600px;
   line-height: 5em;
-  /* background-image: url(./images/servicesbg.jpg);
-background-size: cover;
-background-repeat: no-repeat; */
 }
 .serv {
   color: white;
@@ -293,107 +298,7 @@ background-repeat: no-repeat; */
   border: solid 2px rgb(165, 176, 184);
 }
 
-/* working on this for carousel */
 
-.body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.slider {
-  width: 800px;
-  height: 500px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.slides {
-  width: 500%;
-  height: 500px;
-  display: flex;
-  overflow: hidden;
-}
-.slides input {
-  display: none;
-}
-.slide {
-  width: 20%;
-  transition: 2s;
-}
-.slide img {
-  width: 800px;
-  height: 500px;
-}
-/* manual slide navigation */
-.nav-manual {
-  position: absolute;
-  width: 800px;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-}
-.manual-btn {
-  border: 2px solid #48d3dc;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-.manual-btn:not(:last-child) {
-  margin-right: 40px;
-}
-.manual-btn:hover {
-  background: rgb(50, 62, 70);
-}
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-#radio2:checked ~ .first {
-  margin-left: -40%;
-}
-#radio3:checked ~ .first {
-  margin-left: -80%;
-}
-#radio4:checked ~ .first {
-  margin-left: -120%;
-}
-#radio5:checked ~ .first {
-  margin-left: -160%;
-}
-/* automatic nav */
-.nav-auto {
-  position: absolute;
-  display: flex;
-  width: 800px;
-  justify-content: center;
-  margin-top: 460px;
-}
-.nav-auto div {
-  border: 2px solid #48d3dc;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-.nav-auto div:not(:last-child) {
-  margin-right: 40px;
-}
-#radio1:checked ~ .nav-auto .auto-btn1 {
-  background: #48d3dc;
-}
-#radio2:checked ~ .nav-auto .auto-btn2 {
-  background: #48d3dc;
-}
-#radio3:checked ~ .nav-auto .auto-btn3 {
-  background: #48d3dc;
-}
-#radio4:checked ~ .nav-auto .auto-btn4 {
-  background: #48d3dc;
-}
-#radio5:checked ~ .nav-auto .auto-btn5 {
-  background: #48d3dc;
-}
 footer {
   margin-top: 30px;
 }
@@ -469,7 +374,87 @@ form {
   cursor: pointer;
   color: rgb(115, 119, 122);
 }
+.testimonial-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding:  5rem 1rem;
+}
+.testimonial-container .testimonial-wrapper{
+  position: relative;
+  max-width: 90rem;
+  width: 100%;
+  padding: 5rem;
+}
+.testimonial-wrapper .testimonial-box {
+  padding: 1rem;
+border-radius: 2rem;
+overflow: hidden;
+}
+.testimonial-content .testimonial-slide{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--bg-color);
+  border-radius: 2rem;
+  box-shadow: 0 .1rem .5rem var(--shadow-color);
+  padding: 3rem 5rem;
+  border-top: .8rem solid var(--main-color);
+  border-bottom: .8rem solid var(--main-color);
+}
+.testimonial-slide img {
+ width: 14rem;
+ height: 14rem;
+ object-fit: cover;
+ border-radius: 50%;
+  border: .5rem solid var(--bg-color);
+  outline: .5rem solid var(--main-color);
+}
+.testimonial-slide h3{
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+.testimonial-slide p{
+  font-size: 1.4rem;
+  text-align: center;
+}
+.testimonial-box .swiper-button-next, 
+.testimonial-box .swiper-buton-prev{
+color: var(--main-color);
+} 
+.testimonial-box .swiper-button-next {
+  right: 0;
+}
+.testimonial-box .swiper-button-prev {
+  left: 0;
+}
+.testimonial-box .swiper-pagination-bullet {
+  background: rgba(0, 0, 0, .8);
+}
+.testimonial-box .swiper-pagination-bullet-active{
+  background: var(--main-color);
 
+}
+@media (max-width: 1024px) {
+  body {
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+  .bg-trav{
+    width: 100%;
+    margin-inline: auto;
+  }
+  .featsss{
+    margin-top: 100px;
+  }
+}
 @media (max-width: 950px) {
   .navbar :is(.icon-menu, .links .iconclose) {
     display: block;
@@ -562,10 +547,16 @@ form {
     flex-direction: column;
   }
   .money {
-    margin-top: -1300px;
-    margin-left: 200px;
+    margin-top: -1200px;
+    margin-left: 500px;
   }
-  .money1 {
-    margin-left: -100px;
+  #boxim2{
+    margin-top: 70px;
+  
+  .lemon h1{
+    margin-top: -8px;
+    line-height: 2em;
   }
+}
+
 }
