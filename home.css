@@ -124,9 +124,8 @@ header {
   opacity: 70%;
 }
 .lemon {
-  line-height: 2em;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .lemon h1 {
   color: white;
@@ -195,6 +194,7 @@ header {
   height: 600px;
   line-height: 5em;
 }
+
 .serv {
   color: white;
   font-size: 3rem;
@@ -261,22 +261,19 @@ header {
   color: transparent;
   -webkit-text-stroke: 1px white;
 }
-.box-image {
+.flow {
   display: flex;
+  
 }
-.boxim {
+.place1 {
   padding: 20px;
 }
-.flex {
-  display: flex;
-  justify-content: space-around;
-}
-.feat {
+.money h2{
   color: white;
   font-size: 2rem;
   font-weight: 400;
 }
-.aa {
+.money p{
   color: white;
   font-size: 20px;
   font-weight: 600;
@@ -380,6 +377,11 @@ form {
   flex-direction: column;
   width: 100%;
   padding:  5rem 1rem;
+}
+.testimonial-container h2{
+  color: white;
+  font-size: 60px;
+  /* padding-bottom: 20px; */
 }
 .testimonial-container .testimonial-wrapper{
   position: relative;
@@ -523,6 +525,9 @@ color: var(--main-color);
     position: fixed;
     width: 100vw;
   }
+  .lemon h1{
+    margin-top: auto;
+  }
   .welcomes {
     display: flex;
     flex-direction: column;
@@ -542,21 +547,10 @@ color: var(--main-color);
   .featsss {
     margin-top: 500px;
   }
-  .box-image {
+  .flow {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
-  .money {
-    margin-top: -1200px;
-    margin-left: 500px;
-  }
-  #boxim2{
-    margin-top: 70px;
   
-  .lemon h1{
-    margin-top: -8px;
-    line-height: 2em;
-  }
-}
 
 }
